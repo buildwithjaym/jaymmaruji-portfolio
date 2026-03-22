@@ -323,7 +323,11 @@ nav a:hover::after {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
   animation: floatBox 2s ease-in-out infinite alternate;
 }
-
+.stats-box1 i {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  margin-bottom: 0.3rem;
+}
 @keyframes morph {
   0% {
     background: linear-gradient(45deg, var(--accent-color) 0%, var(--accent-color) 100%);
@@ -461,7 +465,7 @@ nav a:hover::after {
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    background: var(--accent-color2);
+    background: var(--primary-color);
 }
 .stat-box{
     border: 1px solid var(--border-color)
@@ -478,7 +482,7 @@ nav a:hover::after {
     color: var(--white);
 }
 .stat-box p{
-    color:var(--primary-color);
+    color:var(--accent-color);
     font-weight: bold;
     text-align: center;
 }
@@ -535,7 +539,7 @@ nav a:hover::after {
 .circle{
     width: 55px;
     height:55px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 50%;
     color: var(--white);
     display: flex;
