@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaymmaruji - Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="siteHeader">
+      <div class="container headerContainer">
+        <a href="#" class="logo">Jaym <span>Maruji.</span></a>
+
+        <nav id="navMenu">
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">Skills & Tools</a>
+          <a href="#projects">My Projects</a>
+          <a href="#creative">Creative Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="download-btn headerBtn" href="/images/resume.png" download>
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <!--Hero Section-->
+    <section class="hero">
+      <div class="container heroContainer">
+        <div class="hero-text" data-aos="fade-right">
+          <h1>
+            HELLO I AM <br />
+            <span id="typing"></span>
+          </h1>
+          <p>Graphic Designer, Backend Developer, PHP Dev, UI/UX Designer</p>
+          <div class="hero-buttons">
+            <a href="#" class="download-btn" >
+              <span>Start Consulting</span>
+            </a>
+            <p class="status">Available for freelance</p>
+          </div>
+        </div>
+        <!--Hero Section-->
+        <div class="hero-images" data-aos="fade-left">
+            <img src="/images/user.png">
+            <div class="stats-box">
+                <i class="fa-solid fa-face-smile"></i>
+                <h3>10k</h3>
+                <p>Happy Satisfied <br/> Customers</p>
+            </div>
+            <div class="stats-box1">
+                <i class="fa-solid fa-award"></i>
+                <p>Best Design <br/> Award</p>
+            </div>
+            <div class="shape-div"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--About Section-->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("active");
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
