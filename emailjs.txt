@@ -1,0 +1,61 @@
+<!--TEMPLATE FOR THE AUTO REPLY-!>
+
+<div style="margin:0;padding:0;background-color:#0b0f19;font-family:system-ui,sans-serif,Arial;font-size:16px;color:#f9fafb;">
+  <div style="max-width:600px;margin:0 auto;padding:24px;">
+    
+    <a href="https://jaymmaruji.online" target="_blank" style="text-decoration:none;outline:none;">
+      <span style="font-size:20px;font-weight:700;color:#f9fafb;">
+        Jaym Maruji
+      </span>
+    </a>
+
+    <p style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);color:#f9fafb;">
+      Hi {{user_name}},
+    </p>
+
+    <p style="color:#9ca3af;line-height:1.8;">
+      Thanks for reaching out through my portfolio. I’ve received your message and I appreciate your interest.
+    </p>
+
+    <p style="color:#9ca3af;line-height:1.8;">
+      Right now, many businesses are missing opportunities simply because they don’t have a strong online presence.
+      Either they’re not visible, or their website doesn’t clearly show what they offer.
+    </p>
+
+    <p style="color:#9ca3af;line-height:1.8;">
+      That’s exactly what I help solve.
+    </p>
+
+    <div style="margin:20px 0;padding:16px;border-radius:10px;background-color:#111827;border:1px solid rgba(255,255,255,0.08);">
+      <p style="margin:0 0 8px 0;color:#3b82f6;font-weight:600;">
+        What I can build for you:
+      </p>
+      <p style="margin:0;color:#f9fafb;font-size:14px;line-height:1.8;">
+        ✔ Modern, responsive websites<br>
+        ✔ Clear and professional presentation of your business<br>
+        ✔ Fast, mobile-friendly user experience<br>
+        ✔ Designs that help convert visitors into clients
+      </p>
+    </div>
+
+    <p style="color:#9ca3af;line-height:1.8;">
+      If you already have a website, I can also review it and suggest improvements.
+    </p>
+
+    <p style="margin-top:16px;">
+      <a href="https://jaymmaruji.online" target="_blank"
+        style="display:inline-block;padding:10px 16px;background-color:#2563eb;color:#ffffff;text-decoration:none;border-radius:8px;font-size:14px;">
+        View My Portfolio
+      </a>
+    </p>
+
+    <p style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);color:#9ca3af;">
+      I’ll get back to you shortly.
+    </p>
+
+    <p style="color:#9ca3af;">
+      Best regards,<br>
+      <span style="color:#f9fafb;font-weight:600;">Jaym Maruji</span>
+    </p>
+  </div>
+</div>
