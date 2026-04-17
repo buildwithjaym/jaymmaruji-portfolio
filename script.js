@@ -9,3 +9,4 @@ new Typed("#typing", {
     loop: true
 
 });
+
