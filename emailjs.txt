@@ -1,61 +1,99 @@
-<!--TEMPLATE FOR THE AUTO REPLY-!>
+<div style="margin:0;padding:0;background-color:#0b0f19;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:16px;color:#f9fafb;">
+  <div style="max-width:620px;margin:0 auto;padding:32px 24px;">
 
-<div style="margin:0;padding:0;background-color:#0b0f19;font-family:system-ui,sans-serif,Arial;font-size:16px;color:#f9fafb;">
-  <div style="max-width:600px;margin:0 auto;padding:24px;">
-    
-    <a href="https://jaymmaruji.online" target="_blank" style="text-decoration:none;outline:none;">
-      <span style="font-size:20px;font-weight:700;color:#f9fafb;">
-        Jaym Maruji
-      </span>
-    </a>
-
-    <p style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);color:#f9fafb;">
-      Hi {{user_name}},
-    </p>
-
-    <p style="color:#9ca3af;line-height:1.8;">
-      Thanks for reaching out through my portfolio. I’ve received your message and I appreciate your interest.
-    </p>
-
-    <p style="color:#9ca3af;line-height:1.8;">
-      Right now, many businesses are missing opportunities simply because they don’t have a strong online presence.
-      Either they’re not visible, or their website doesn’t clearly show what they offer.
-    </p>
-
-    <p style="color:#9ca3af;line-height:1.8;">
-      That’s exactly what I help solve.
-    </p>
-
-    <div style="margin:20px 0;padding:16px;border-radius:10px;background-color:#111827;border:1px solid rgba(255,255,255,0.08);">
-      <p style="margin:0 0 8px 0;color:#3b82f6;font-weight:600;">
-        What I can build for you:
-      </p>
-      <p style="margin:0;color:#f9fafb;font-size:14px;line-height:1.8;">
-        ✔ Modern, responsive websites<br>
-        ✔ Clear and professional presentation of your business<br>
-        ✔ Fast, mobile-friendly user experience<br>
-        ✔ Designs that help convert visitors into clients
+    <div style="margin-bottom:24px;">
+      <a href="https://jaymmaruji.online" target="_blank" style="text-decoration:none;">
+        <span style="font-size:22px;font-weight:700;color:#ffffff;">
+          Jaymar Maruji
+        </span>
+      </a>
+      <p style="margin:6px 0 0;color:#9ca3af;font-size:14px;">
+        Full-Stack Developer & UI/UX Designer
       </p>
     </div>
 
-    <p style="color:#9ca3af;line-height:1.8;">
-      If you already have a website, I can also review it and suggest improvements.
+    <div style="height:1px;background-color:rgba(255,255,255,0.08);"></div>
+
+    <p style="margin-top:28px;color:#ffffff;font-size:18px;font-weight:600;">
+      Hi {{user_name}},
     </p>
 
-    <p style="margin-top:16px;">
-      <a href="https://jaymmaruji.online" target="_blank"
-        style="display:inline-block;padding:10px 16px;background-color:#2563eb;color:#ffffff;text-decoration:none;border-radius:8px;font-size:14px;">
-        View My Portfolio
+    <p style="color:#b0b7c3;line-height:1.8;">
+      Thank you for reaching out through my portfolio. Your project inquiry has been received successfully.
+    </p>
+
+    <p style="color:#b0b7c3;line-height:1.8;">
+      I will personally review your requirements and get back to you with the next steps for your project.
+    </p>
+
+
+    <div style="margin:24px 0;padding:20px;border-radius:12px;background:#111827;border:1px solid rgba(255,255,255,0.08);">
+
+      <p style="margin:0 0 14px;color:#3b82f6;font-weight:600;font-size:15px;">
+        Project Inquiry Summary
+      </p>
+
+      <p style="margin:0;color:#ffffff;font-size:14px;line-height:1.9;">
+        <strong>Service:</strong> {{service_type}}<br>
+        <strong>Message:</strong><br>
+        {{message}}
+      </p>
+
+    </div>
+
+
+    <div style="margin:24px 0;padding:20px;border-radius:12px;background:#0f172a;border:1px solid rgba(255,255,255,0.08);">
+
+      <p style="margin:0 0 12px;color:#ffffff;font-weight:600;">
+        What happens next?
+      </p>
+
+      <p style="margin:0;color:#b0b7c3;font-size:14px;line-height:1.9;">
+        ✓ Review of your project requirements<br>
+        ✓ Discussion about goals and possible solutions<br>
+        ✓ Planning of timeline and project direction
+      </p>
+
+    </div>
+
+
+    <p style="color:#b0b7c3;line-height:1.8;">
+      I focus on building websites, web applications, and digital solutions that are clean, functional, and designed around your needs.
+    </p>
+
+
+    <div style="margin:28px 0;text-align:center;">
+
+      <a href="https://jaymmaruji.online/#projects"
+      target="_blank"
+      style="display:inline-block;padding:12px 22px;background:#2563eb;color:#ffffff;text-decoration:none;border-radius:8px;font-size:14px;font-weight:600;">
+        Explore My Work
       </a>
+
+    </div>
+
+
+    <div style="height:1px;background-color:rgba(255,255,255,0.08);"></div>
+
+
+    <p style="margin-top:24px;color:#9ca3af;line-height:1.8;font-size:14px;">
+      Expected response time: within 24 hours.
     </p>
 
-    <p style="padding-top:16px;border-top:1px solid rgba(255,255,255,0.08);color:#9ca3af;">
-      I’ll get back to you shortly.
-    </p>
 
-    <p style="color:#9ca3af;">
+    <p style="color:#9ca3af;font-size:14px;line-height:1.8;">
       Best regards,<br>
-      <span style="color:#f9fafb;font-weight:600;">Jaym Maruji</span>
+      <span style="color:#ffffff;font-weight:600;">
+        Jaymar Maruji
+      </span><br>
+      Full-Stack Developer & UI/UX Designer
     </p>
+
+
+    <p style="margin-top:24px;color:#6b7280;font-size:12px;text-align:center;">
+      © 2026 Jaym Maruji. All rights reserved.<br>
+      https://jaymmaruji.online
+    </p>
+
   </div>
 </div>
