@@ -1183,10 +1183,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
-    emailjs.init({
-      publicKey: "m00a6hKbZ8S6KnXq-"
-    });
-
     const form = document.getElementById("contact-form");
     const statusText = document.getElementById("form-status");
     const submitBtn = form.querySelector('button[type="submit"]');
@@ -1199,7 +1195,11 @@
 
       try {
 
-        // Send notification to me (the portfolio owner)
+        // Send notification to portfolio owner
+        emailjs.init({
+          publicKey: "gKiEvxMf7gI_FhdZn"
+        });
+
         await emailjs.sendForm(
           "service_fum65jf",
           "template_rxj29tk",
@@ -1208,6 +1208,10 @@
 
 
         // Send auto reply to client
+        emailjs.init({
+          publicKey: "m00a6hKbZ8S6KnXq-"
+        });
+
         await emailjs.sendForm(
           "service_z24x1iz",
           "template_r213v6j",
