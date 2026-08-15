@@ -1,0 +1,63 @@
+<div style="background:#0b0f19;padding:30px;font-family:Arial,sans-serif;color:#ffffff;">
+
+<div style="max-width:600px;margin:auto;background:#111827;padding:25px;border-radius:12px;">
+
+<h2 style="color:#3b82f6;">
+New Project Inquiry
+</h2>
+
+<p style="color:#9ca3af;">
+You received a new message from your portfolio website.
+</p>
+
+
+<hr style="border:1px solid #1f2937;">
+
+
+<p>
+<strong>Name:</strong><br>
+{{user_name}}
+</p>
+
+
+<p>
+<strong>Email:</strong><br>
+{{user_email}}
+</p>
+
+
+<p>
+<strong>Phone:</strong><br>
+{{user_phone}}
+</p>
+
+
+<p>
+<strong>Requested Service:</strong><br>
+{{service_type}}
+</p>
+
+
+<p>
+<strong>Message:</strong><br>
+{{message}}
+</p>
+
+
+<hr style="border:1px solid #1f2937;">
+
+
+<p style="color:#9ca3af;">
+Reply to this client as soon as possible.
+</p>
+
+
+<p>
+Jaym Maruji<br>
+Full Stack Developer
+</p>
+
+
+</div>
+
+</div>
