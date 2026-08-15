@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="icon" href="images/logo.webp" type="image/png" />
   <title>Jaymmaruji - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -290,7 +290,7 @@
 
           <!-- Card 1 -->
           <div class="testimonial-card">
-            <img src="images/logo.png" class="avatar" />
+            <img src="images/logo.webp" class="avatar" />
             <div class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -304,7 +304,7 @@
 
           <!-- Card 2 -->
           <div class="testimonial-card">
-            <img src="images/logo.png" class="avatar" />
+            <img src="images/logo.webp" class="avatar" />
             <div class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -317,7 +317,7 @@
 
           <!-- Card 3 -->
           <div class="testimonial-card">
-            <img src="images/logo.png" class="avatar" />
+            <img src="images/logo.webp" class="avatar" />
             <div class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -329,7 +329,7 @@
 
           <!-- DUPLICATE FOR LOOP -->
           <div class="testimonial-card">
-            <img src="images/logo.png" class="avatar" />
+            <img src="images/logo.webp" class="avatar" />
             <div class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -341,7 +341,7 @@
           </div>
 
           <div class="testimonial-card">
-            <img src="images/logo.png" class="avatar" />
+            <img src="images/logo.webp" class="avatar" />
             <div class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -354,7 +354,7 @@
           </div>
 
           <div class="testimonial-card">
-            <img src="images/logo.png" class="avatar" />
+            <img src="images/logo.webp" class="avatar" />
             <div class="stars">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -483,7 +483,7 @@
 
         <div class="tool-card">
           <div class="tool-icon">
-            <img src="images/xampp.png" alt="XAMPP">
+            <img src="images/tools/xampp.webp" alt="XAMPP">
           </div>
           <div class="tool-percent">91%</div>
           <div class="tool-bar">
@@ -827,7 +827,7 @@
       <!-- Project 8 -->
       <div class="project-row reverse" data-aos="fade-left">
         <div class="project-img">
-          <img src="images/cet-project/header.png" alt="CET REsult System" />
+          <img src="images/cet-project/header.webp" alt="CET REsult System" />
         </div>
         <div class="project-content">
           <h3>College Entrance Test Result System</h3>
@@ -1110,7 +1110,7 @@
           </div>
         </form>
 
-        <p id="form-status" style="margin-top: 10px;"></p>
+        <p id="form-status" class="form-status"></p>
       </div>
     </div>
   </section>
@@ -1191,7 +1191,8 @@
       e.preventDefault();
 
       submitBtn.disabled = true;
-      statusText.textContent = "Sending message...";
+      statusText.className = "form-status loading";
+      statusText.textContent = "Sending your message. Please wait...";
 
       try {
 
@@ -1219,16 +1220,18 @@
         );
 
 
-        statusText.textContent = "Message sent successfully!";
+        statusText.className = "form-status success";
+        statusText.textContent =
+          "Message sent successfully. Thank you for reaching out. I will get back to you soon.";
         form.reset();
 
       } catch (error) {
 
         console.error("EmailJS error:", error);
 
+        statusText.className = "form-status error";
         statusText.textContent =
-          "Failed to send message. Please try again.";
-
+          "Message failed to send. Please check your details and try again.";
       } finally {
 
         submitBtn.disabled = false;
