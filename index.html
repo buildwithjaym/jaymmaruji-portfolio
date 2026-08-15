@@ -1087,15 +1087,18 @@
               <input type="text" name="user_phone" placeholder="Phone..." />
             </div>
             <div class="form-group">
-              <select name="service_type" required>
+              <select id="service_type" name="service_type" required>
                 <option value="">Select Service</option>
-                <option>Web Design</option>
-                <option>Graphic Design</option>
-                <option>UI/UX Design</option>
-                <option>Desktop Application</option>
-                <option>Backend Service</option>
-                <option>Landing Pages</option>
+                <option value="Web Design">Web Design</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Desktop Application">Desktop Application</option>
+                <option value="Backend Service">Backend Service</option>
+                <option value="Landing Pages">Landing Pages</option>
+                <option value="Other">Other</option>
               </select>
+              <input type="text" id="other_service" name="other_service" placeholder="Please specify your service..."
+                style="display:none; margin-top:15px;" />
             </div>
           </div>
 
