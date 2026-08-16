@@ -10,23 +10,4 @@ new Typed("#typing", {
 
 });
 
-const serviceSelect = document.getElementById("service_type");
-const otherService = document.getElementById("other_service");
-
-serviceSelect.addEventListener("change", function () {
-
-    if (this.value === "Other") {
-
-        otherService.style.display = "block";
-        otherService.required = true;
-
-    } else {
-
-        otherService.style.display = "none";
-        otherService.required = false;
-        otherService.value = "";
-
-    }
-
-});
 
