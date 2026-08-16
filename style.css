@@ -195,6 +195,26 @@ nav a:hover::after {
   box-shadow: 0 12px 28px rgba(59, 130, 246, 0.35);
 }
 
+.mobileMenuResume {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  .headerBtn {
+    display: none;
+  }
+
+  .mobileMenuResume {
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+
 /* Hero */
 .hero {
   position: relative;
