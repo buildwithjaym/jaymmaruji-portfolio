@@ -2,1466 +2,967 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="images/logo.webp" type="image/png" />
-  <title>Jaymmaruji - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <!-- Font Awesome Free CDN -->
+  <meta name="theme-color" content="#ffffff" />
+
+  <title>Jaym Maruji | Full-Stack Developer & UI/UX Designer</title>
+  <meta name="description"
+    content="Portfolio of Jaym Maruji, a Computer Science student and full-stack developer from Basilan building practical web systems, startup MVPs, real-time applications, and clean user experiences." />
+
+  <link rel="icon" href="jaymar-logo.webp" type="image/webp" />
+  <link rel="stylesheet" href="style.css?v3" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-  <header id="siteHeader">
-    <div class="container headerContainer">
-      <a href="#" class="logo">Jaym <span>Maruji.</span></a>
 
-      <nav id="navMenu">
-        <a href="#hero">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Tools & Frameworks</a>
-        <a href="#projects">My Projects</a>
-        <a href="#creative">Creative Work</a>
-        <a href="#contact">Contact</a>
-        <a class="download-btn mobileMenuResume" href="jaymmaruji-resume.pdf" download>
-          <i class="fa-solid fa-download"></i>
-          Download Resume
+  <body class="loading">
+
+    <a class="skip-link" href="#main-content">
+      Skip to content
+    </a>
+
+
+
+    <div class="site-loader" id="siteLoader" aria-hidden="true">
+      <div class="loader-content">
+        <div class="loader-brand">
+          Jaymar <span>Maruji.</span>
+        </div>
+
+        <div class="loader-progress">
+          <span class="loader-progress-bar"></span>
+        </div>
+
+        <p class="loader-label">
+          Full-Stack Developer · UI/UX Designer
+        </p>
+
+      </div>
+    </div>
+
+    <header class="site-header page-reveal" id="siteHeader">
+      <div class="container nav-wrap">
+
+        <a href="#home" class="brand" aria-label="Jaym Maruji home">
+          Jaymar <span>Maruji.</span>
+
         </a>
 
-      </nav>
 
-      <a class="download-btn headerBtn" href="jaymmaruji-resume.pdf" download>
-        <i class="fa-solid fa-download"></i> Download CV
-      </a>
 
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <i class="bx bx-menu"></i>
-      </div>
-    </div>
-  </header>
-  <!--Hero Section-->
-  <section class="hero" id="hero">
-    <div class="container heroContainer">
-      <div class="hero-text" data-aos="fade-right">
-        <h1>
-          HELLO I AM <br />
-          <span id="typing"></span>
-        </h1>
-        <p>Graphic Designer, Backend Developer, PHP Dev, UI/UX Designer</p>
-        <div class="hero-buttons">
-          <a href="#" class="download-btn">
-            <span>Let’s Work Together </span>
-          </a>
-          <p class="status">Open for project inquiries</p>
-        </div>
-      </div>
-      <!--Hero Section-->
-      <div class="hero-images" data-aos="fade-left">
-        <img src="images/me.webp" />
-        <div class="stats-box">
-          <i class="fa-solid fa-face-smile"></i>
-          <h3>10+</h3>
-          <p>
-            Happy Satisfied <br />
-            Customers
-          </p>
-        </div>
-        <div class="stats-box1">
-          <i class="fa-solid fa-award"></i>
-          <p>
-            Deans' <br />
-            Lister
-          </p>
-        </div>
-        <div class="shape-div"></div>
-      </div>
-    </div>
-  </section>
+        <nav id="navMenu" class="nav-menu" aria-label="Primary navigation">
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container about-wrapper">
+          <a href="#about">About</a>
+          <a href="#why-me">Why Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
 
-      <!-- About Left -->
-      <div class="about-left" data-aos="fade-right">
-        <div class="box img-box">
-          <img src="images/jaymar.webp" alt="Jaymar Maruji" />
-        </div>
 
-        <div class="box stat-box">
-          <h2>20+</h2>
-          <p>PROJECTS BUILT</p>
-        </div>
+          <a class="nav-resume mobile-only" href="jaymmaruji-resume.pdf" download>
+            <i class="fa-solid fa-download" aria-hidden="true"></i>
 
-        <div class="box stat-box">
-          <h2>6+</h2>
-          <p>MAJOR SYSTEMS DEPLOYED</p>
-        </div>
-
-        <div class="box img-box">
-          <img src="images/IMG_1810.webp" alt="Working" />
-        </div>
-      </div>
-
-      <!-- About Right -->
-      <div class="about-right" data-aos="fade-left">
-
-        <h6 class="subHeading">ABOUT ME</h6>
-
-        <h1 class="heading">
-          Building Digital Products That Solve Real Problems.
-        </h1>
-
-        <p class="desc">
-          I'm a Full-Stack Developer and Computer Science student passionate
-          about turning ideas into reliable digital products. My journey began
-          with a curiosity about how systems work, which quickly grew into a
-          passion for designing and building solutions that make people's lives
-          easier through technology.
-
-          I specialize in creating modern web applications, startup MVPs,
-          business systems, and intuitive user interfaces. From planning the
-          overall system architecture to designing the user experience and
-          developing the final product, I enjoy every stage of the development
-          process.
-
-          Every project I build is driven by one goal: creating technology that
-          solves real-world problems and delivers lasting impact.
-        </p>
-
-        <div class="info-grid">
-
-          <div class="info-item">
-            <span class="square"></span>
-            <b>Role</b> : Full-Stack Developer
-          </div>
-
-          <div class="info-item">
-            <span class="square"></span>
-            <b>Focus</b> : Web Applications, Startup MVPs & System Design
-          </div>
-
-          <div class="info-item">
-            <span class="square"></span>
-            <b>Services</b> : Full-Stack Development, UI/UX Design, Landing Pages and more...
-          </div>
-
-          <div class="info-item">
-            <span class="square"></span>
-            <b>Tech Stack</b> : Next.js, TypeScript, Supabase & Tailwind CSS
-          </div>
-
-          <div class="info-item">
-            <span class="square"></span>
-            <b>Featured Projects</b> : Trashure, Nexora & College Entrance Test Result System
-          </div>
-
-          <div class="info-item">
-            <span class="square"></span>
-            <b>Mission</b> : Building solutions that create lasting impact
-          </div>
-
-          <div class="info-item">
-            <span class="square"></span>
-            <b>Status</b> : Open for Freelance & Collaboration
-          </div>
-
-        </div>
-
-        <div class="download">
-          <a class="download-btn" href="jaymmaruji-resume.pdf" download>
-            <i class="fa-solid fa-download"></i>
-            &nbsp; Download Resume
+            Download Resume
           </a>
 
-          <div class="circle">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </div>
+        </nav>
+
+
+        <div class="nav-actions">
+
+          <a class="btn btn-primary header-resume desktop-resume" href="jaymmaruji-resume.pdf" download>
+            <i class="fa-solid fa-download" aria-hidden="true"></i>
+
+            Download Resume
+          </a>
+
+
+          <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="navMenu"
+            aria-expanded="false">
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+
         </div>
 
       </div>
+    </header>
 
-    </div>
-  </section>
+    <main id="main-content">
+      <section class="hero section page-reveal hero-reveal" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Full-Stack Developer · UI/UX Designer</p>
 
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="services-header" data-aos="zoom-in">
-        <div class="services-heading">
-          <p class="subHeading">MY SERVICES</p>
-          <h2 class="heading">WHAT I CAN DO FOR YOU</h2>
-          <p class="desc">
-            I provide design and development services focused on creating
-            clean, functional, and user-friendly digital solutions for
-            individuals, startups, and organizations.
-          </p>
-        </div>
-      </div>
+            <h1>I build digital products that solve real problems.</h1>
 
-      <!-- Service Cards -->
-      <div class="services-grid" data-aos="fade-up">
-        <!-- Card 1 -->
-        <article class="service-card">
-          <div class="icon">
-            <i class="fa-solid fa-pencil-ruler"></i>
-          </div>
-          <h3>UI/UX Design</h3>
-          <p class="desc">
-            I design clean, modern, and intuitive user interfaces that improve
-            usability and create a better overall user experience.
-          </p>
-          <a href="#contact" class="download-btn">Get This Service</a>
-        </article>
+            <p class="hero-lead">
+              I’m Jaym Maruji, a Computer Science student from Basilan focused on full-stack development,
+              startup MVPs, practical systems, and clean user experiences.
+            </p>
 
-        <!-- Card 2 -->
-        <article class="service-card">
-          <div class="icon">
-            <i class="fa-solid fa-database"></i>
-          </div>
-          <h3>Backend Development</h3>
-          <p class="desc">
-            I build structured backend systems that manage data, business
-            logic, and application functionality efficiently and securely.
-          </p>
-          <a href="#contact" class="download-btn">Get This Service</a>
-        </article>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View My Projects
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
 
-        <!-- Card 3 -->
-        <article class="service-card">
-          <div class="icon">
-            <i class="fa-solid fa-palette"></i>
-          </div>
-          <h3>Graphic Design</h3>
-          <p class="desc">
-            I create visually appealing designs such as posters, pubmats,
-            branding materials, and promotional graphics that communicate
-            clearly.
-          </p>
-          <a href="#contact" class="download-btn">Get This Service</a>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="service-card">
-          <div class="icon">
-            <i class="fa-solid fa-laptop-code"></i>
-          </div>
-          <h3>Desktop Application Development</h3>
-          <p class="desc">
-            I develop reliable desktop applications using Java, focusing on
-            functionality, usability, and organized system architecture.
-          </p>
-          <a href="#contact" class="download-btn">Get This Service</a>
-        </article>
-
-        <!-- Card 5 -->
-        <article class="service-card">
-          <div class="icon">
-            <i class="fa-solid fa-code"></i>
-          </div>
-          <h3>Web Development</h3>
-          <p class="desc">
-            I create responsive and functional websites tailored for
-            performance, accessibility, and modern web standards.
-          </p>
-          <a href="#contact" class="download-btn">Get This Service</a>
-        </article>
-
-        <!-- Card 6 -->
-        <article class="service-card">
-          <div class="icon">
-            <i class="fa-solid fa-rocket"></i>
-          </div>
-          <h3>Landing Page Development</h3>
-          <p class="desc">
-            I build clean and engaging landing pages designed to highlight
-            your brand, attract users, and improve conversions.
-          </p>
-          <a href="#contact" class="download-btn">Get This Service</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="container">
-      <h2 class="heading">What Clients Say</h2>
-
-      <div class="testimonial-wrapper">
-        <div class="testimonial-track">
-
-          <!-- Card 1 -->
-          <div class="testimonial-card">
-            <img src="images/logo.webp" class="avatar" />
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-
+              <a href="#contact" class="btn btn-secondary">Let’s Talk</a>
             </div>
-            <p>"Jaym delivered clean and fast work. Highly recommended!"</p>
-            <h4>Client A</h4>
-          </div>
 
-          <!-- Card 2 -->
-          <div class="testimonial-card">
-            <img src="images/logo.webp" class="avatar" />
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+            <div class="hero-proof" aria-label="Portfolio highlights">
+              <div class="proof-item">
+                <strong>117+</strong>
+                <span>AmoreFrame users and counting</span>
+              </div>
+              <div class="proof-item">
+                <strong>6+</strong>
+                <span>Major systems deployed</span>
+              </div>
+              <div class="proof-item">
+                <strong>20+</strong>
+                <span>Projects built</span>
+              </div>
             </div>
-            <p>"Very professional and easy to work with."</p>
-            <h4>Client B</h4>
           </div>
 
-          <!-- Card 3 -->
-          <div class="testimonial-card">
-            <img src="images/logo.webp" class="avatar" />
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+          <div class="hero-visual reveal">
+            <div class="portrait-frame">
+              <img src="images/me.webp" alt="Portrait of Jaym Maruji" class="hero-photo" />
             </div>
-            <p>"Great UI/UX skills. Loved the final result."</p>
-            <h4>Client C</h4>
+
+            <p class="availability">
+              <span class="status-dot" aria-hidden="true"></span>
+              Open for internship, freelance, and collaboration
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="about">
+        <div class="container split-layout">
+          <div class="section-intro reveal">
+            <p class="eyebrow">About</p>
+            <h2>Developer first. Designer by practice. Builder by mindset.</h2>
           </div>
 
-          <!-- DUPLICATE FOR LOOP -->
-          <div class="testimonial-card">
-            <img src="images/logo.webp" class="avatar" />
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+          <div class="about-copy reveal">
+            <p>
+              I work across product planning, UI/UX, frontend development, backend logic, database design,
+              testing, and deployment. This lets me connect product decisions with the system that ships.
+            </p>
+
+            <p>
+              My project work includes real-time applications, education platforms, AI-assisted products,
+              IoT systems, authentication, geolocation, and desktop software. I focus on clear workflows,
+              maintainable implementation, and useful outcomes.
+            </p>
+
+            <dl class="about-facts">
+              <div>
+                <dt>Role</dt>
+                <dd>Full-Stack Developer</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Web Apps, MVPs &amp; System Design</dd>
+              </div>
+              <div>
+                <dt>Core Stack</dt>
+                <dd>Next.js, TypeScript, Supabase</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Isabela City, Basilan</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="why-me">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">What I Bring</p>
+            <h2>I contribute beyond writing code.</h2>
+          </div>
+
+          <div class="bring-list">
+            <article class="bring-row reveal">
+              <span class="row-number">01</span>
+              <h3>End-to-end ownership</h3>
+              <p>I work across design, frontend, backend, database structure, testing, and deployment.</p>
+            </article>
+
+            <article class="bring-row reveal">
+              <span class="row-number">02</span>
+              <h3>Product-focused development</h3>
+              <p>I study the problem, users, workflow, and expected result before implementation.</p>
+            </article>
+
+            <article class="bring-row reveal">
+              <span class="row-number">03</span>
+              <h3>Design-aware engineering</h3>
+              <p>My design background helps me build clearer interfaces and stronger information hierarchy.</p>
+            </article>
+
+            <article class="bring-row reveal">
+              <span class="row-number">04</span>
+              <h3>Learning through real projects</h3>
+              <p>I apply WebRTC, real-time sync, AI, IoT, authentication, geolocation, and databases in working systems.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-section" aria-labelledby="proof-title">
+        <div class="container proof-grid">
+          <div class="proof-copy reveal">
+            <p class="eyebrow eyebrow-light">Proof of Work</p>
+            <h2 id="proof-title">Built beyond the classroom.</h2>
+            <p>
+              My experience comes from shipped systems, freelance development, design work, and products built
+              around real user and organizational problems.
+            </p>
+          </div>
+
+          <div class="proof-stats reveal" aria-label="Work statistics">
+            <div>
+              <strong>117+</strong>
+              <span>Users reached through AmoreFrame</span>
             </div>
-            <p>"Jaym delivered clean and fast work. Highly recommended!"</p>
-            <h4>Client A</h4>
-          </div>
-
-          <div class="testimonial-card">
-            <img src="images/logo.webp" class="avatar" />
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+            <div>
+              <strong>6+</strong>
+              <span>Major systems deployed</span>
             </div>
-            <p>"Very professional and easy to work with."</p>
-            <h4>Client B</h4>
-          </div>
-
-          <div class="testimonial-card">
-            <img src="images/logo.webp" class="avatar" />
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+            <div>
+              <strong>20+</strong>
+              <span>Projects built</span>
             </div>
-            <p>"Great UI/UX skills. Loved the final result."</p>
-            <h4>Client C</h4>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tool Section -->
-  <section class="toolSection" id="skills">
-    <br />
-    <div class="tools-container">
-      <div class="tools-header">
-        <h4 class="subHeading" data-aos="zoom-in">My Favorite Tools</h4>
-        <h2 class="heading" data-aos="zoom-in">
-          Design Tools that
-          <span>Power My Work</span>
-        </h2>
-      </div>
-
-      <div class="tools-grid" data-aos="fade-right">
-        <!-- Web / Frontend -->
-        <div class="tool-category">Web / Frontend</div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/html5.png" alt="HTML" />
-          </div>
-          <div class="tool-percent">89%</div>
-          <div class="tool-bar">
-            <span style="width: 89%"></span>
-          </div>
-          <div class="tool-name">HTML</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/css3.webp" alt="CSS" />
-          </div>
-          <div class="tool-percent">79%</div>
-          <div class="tool-bar">
-            <span style="width: 79%"></span>
-          </div>
-          <div class="tool-name">CSS</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/js.png" alt="JavaScript" />
-          </div>
-          <div class="tool-percent">80%</div>
-          <div class="tool-bar">
-            <span style="width: 80%"></span>
-          </div>
-          <div class="tool-name">JavaScript</div>
-        </div>
-
-        <!-- Backend / Programming -->
-        <div class="tool-category">Backend / Programming</div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/java.png" alt="Java" />
-          </div>
-          <div class="tool-percent">80%</div>
-          <div class="tool-bar">
-            <span style="width: 80%"></span>
-          </div>
-          <div class="tool-name">Java</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/php.png" alt="PHP" />
-          </div>
-          <div class="tool-percent">75%</div>
-          <div class="tool-bar">
-            <span style="width: 75%"></span>
-          </div>
-          <div class="tool-name">PHP</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/python.jpg" alt="Python" />
-          </div>
-          <div class="tool-percent">80%</div>
-          <div class="tool-bar">
-            <span style="width: 80%"></span>
-          </div>
-          <div class="tool-name">Python</div>
-        </div>
-
-        <!-- Database -->
-        <div class="tool-category">Database</div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/mysql.png" alt="MySQL" />
-          </div>
-          <div class="tool-percent">82%</div>
-          <div class="tool-bar">
-            <span style="width: 82%"></span>
-          </div>
-          <div class="tool-name">MySQL</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/supabase.jpg" alt="Supabase" />
-          </div>
-          <div class="tool-percent">78%</div>
-          <div class="tool-bar">
-            <span style="width: 78%"></span>
-          </div>
-          <div class="tool-name">Supabase</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/xampp.webp" alt="XAMPP">
-          </div>
-          <div class="tool-percent">91%</div>
-          <div class="tool-bar">
-            <span style="width: 91%"></span>
-          </div>
-          <div class="tool-name">XAMPP</div>
-        </div>
-
-        <!-- Design -->
-        <div class="tool-category">Design</div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/figma.webp" alt="Figma" />
-          </div>
-          <div class="tool-percent">93%</div>
-          <div class="tool-bar">
-            <span style="width: 93%"></span>
-          </div>
-          <div class="tool-name">Figma</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/canva.webp" alt="Canva" />
-          </div>
-          <div class="tool-percent">99%</div>
-          <div class="tool-bar">
-            <span style="width: 99%"></span>
-          </div>
-          <div class="tool-name">Canva</div>
-        </div>
-
-        <!-- Deployment -->
-        <div class="tool-category">Deployment</div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/netlify.jpg" alt="Netlify" />
-          </div>
-          <div class="tool-percent">90%</div>
-          <div class="tool-bar">
-            <span style="width: 90%"></span>
-          </div>
-          <div class="tool-name">Netlify</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/vercel.jpg" alt="Vercel" />
-          </div>
-          <div class="tool-percent">98%</div>
-          <div class="tool-bar">
-            <span style="width: 98%"></span>
-          </div>
-          <div class="tool-name">Vercel</div>
-        </div>
-
-        <!-- IDEs -->
-        <div class="tool-category">IDEs</div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/netbeans.jpg" alt="Apache NetBeans" />
-          </div>
-          <div class="tool-percent">97%</div>
-          <div class="tool-bar">
-            <span style="width: 97%"></span>
-          </div>
-          <div class="tool-name">Apache NetBeans</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/vscode.jpg" alt="VS Code" />
-          </div>
-          <div class="tool-percent">96%</div>
-          <div class="tool-bar">
-            <span style="width: 96%"></span>
-          </div>
-          <div class="tool-name">VS Code</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/arduino.png" alt="Arduino">
-          </div>
-          <div class="tool-percent">89%</div>
-          <div class="tool-bar">
-            <span style="width: 89%"></span>
-          </div>
-          <div class="tool-name">Arduino</div>
-        </div>
-
-        <!-- Version Control -->
-        <div class="tool-category">Version Control</div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/github.webp" alt="GitHub" />
-          </div>
-          <div class="tool-percent">90%</div>
-          <div class="tool-bar">
-            <span style="width: 90%"></span>
-          </div>
-          <div class="tool-name">GitHub</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/git.webp" alt="Git" />
-          </div>
-          <div class="tool-percent">90%</div>
-          <div class="tool-bar">
-            <span style="width: 90%"></span>
-          </div>
-          <div class="tool-name">Git</div>
-        </div>
-        <!-- frameworks -->
-        <div class="tool-category">Frameworks</div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/react.png" alt="React" />
-          </div>
-          <div class="tool-percent">39%</div>
-          <div class="tool-bar">
-            <span style="width: 39%"></span>
-          </div>
-          <div class="tool-name">React</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/tools/nextjs.jpg" alt="NEXTjs" />
-          </div>
-          <div class="tool-percent">59%</div>
-          <div class="tool-bar">
-            <span style="width: 59%"></span>
-          </div>
-          <div class="tool-name">NEXT.js</div>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">
-            <img src="images/7234c47a96ac47a3cf540be61f8adbf1-removebg-preview.png" alt="Node.js">
-          </div>
-          <div class="tool-percent">49%</div>
-          <div class="tool-bar">
-            <span style="width: 49%"></span>
-          </div>
-          <div class="tool-name">NODE.js</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Featured Sections -->
-  <section class="featured" id="projects">
-    <div class="container">
-      <div class="section-title" data-aos="zoom-in">
-        <p class="subHeading">SHOWCASE MY SKILLS</p>
-        <h2 class="heading">Featured Work</h2>
-      </div>
-
-      <!-- Project 1 -->
-      <div class="project-row" data-aos="fade-right">
-        <div class="project-img">
-          <img src="images/projects/classify.png" alt="Classify project" />
-        </div>
-        <div class="project-content">
-          <h3>Classify: Instant Class Notification & Alert System</h3>
-          <p>
-            Classify is a web-based system built to streamline communication
-            between administrators, teachers, and students. It allows
-            administrators to manage enrollments and assign teachers, while
-            teachers can handle schedules, attendance, grading, and quizzes.
-            Students can view schedules, track their performance, and receive
-            real-time notifications when classes are canceled.
-          </p>
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-          </div>
-          <div class="btns">
-            <a href="https://github.com/buildwithjaym/" class="download-btn">View Project</a>
+            <div>
+              <strong>3+ years</strong>
+              <span>Graphic design experience</span>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Project 2 -->
-      <div class="project-row reverse" data-aos="fade-left">
-        <div class="project-img">
-          <img src="images/projects/babala.png" alt="BabalaBaha project" />
-        </div>
-        <div class="project-content">
-          <h3>BabalaBaha: IoT-Based Flood Monitoring System</h3>
-          <p>
-            An IoT-based flood monitoring system designed to track water
-            levels and send real-time alerts to response centers. The system
-            continuously monitors environmental data and provides early
-            warnings to help prevent risks and improve disaster response.
-          </p>
-          <div class="tags">
-            <span>IoT</span>
-            <span>Arduino</span>
-            <span>ESP32</span>
-            <span>C++</span>
+      <section class="tech-marquee" aria-label="Technology stack">
+        <div class="marquee-track">
+          <div class="marquee-group" aria-hidden="false">
+            <span class="marquee-item"><img src="images/tools/nextjs.jpg" alt="" />Next.js</span>
+            <span class="marquee-item"><img src="images/tools/react.png" alt="" />React</span>
+            <span class="marquee-item"><span class="logo-fallback">TS</span>TypeScript</span>
+            <span class="marquee-item"><img src="images/tools/js.webp" alt="" />JavaScript</span>
+            <span class="marquee-item"><img src="images/tools/supabase.jpg" alt="" />Supabase</span>
+            <span class="marquee-item"><img src="images/tools/php.png" alt="" />PHP</span>
+            <span class="marquee-item"><img src="images/tools/java.webp" alt="" />Java</span>
+            <span class="marquee-item"><img src="images/tools/mysql.webp" alt="" />MySQL</span>
+            <span class="marquee-item"><img src="images/tools/git.webp" alt="" />Git</span>
+            <span class="marquee-item"><img src="images/tools/github.webp" alt="" />GitHub</span>
+            <span class="marquee-item"><img src="images/tools/figma.webp" alt="" />Figma</span>
+            <span class="marquee-item"><img src="images/tools/vercel.jpg" alt="" />Vercel</span>
+            <span class="marquee-item"><img src="images/arduino.png" alt="" />Arduino</span>
           </div>
-          <div class="btns">
-            <a href="https://github.com/buildwithjaym/Flood-Monitoring-System-for-CDRRMO"
-              title="View Flood Monitoring System" class="download-btn">View
-              Project</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 3 -->
-      <div class="project-row" data-aos="fade-right">
-        <div class="project-img">
-          <img src="images/projects/startupteamwebsite.png" alt="Student Team Management Website" />
-        </div>
-        <div class="project-content">
-          <h3>Startup Team Management Website</h3>
-          <p>
-            A responsive website built with HTML, CSS, and JavaScript that
-            allows students to form teams for Startup consists of three members: Founder, Developer, and
-            Designer. The platform provides forms for team member details and
-            includes printing functionalities for team summaries and reports.
-          </p>
-          <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Printing</span>
-            <span>Web App</span>
-          </div>
-          <div class="btns">
-            <a href="https://startupbscsteams.vercel.app" title="Visit STM Website" class="download-btn">View
-              Project</a>
+          <div class="marquee-group" aria-hidden="true">
+            <span class="marquee-item"><img src="images/tools/nextjs.jpg" alt="" />Next.js</span>
+            <span class="marquee-item"><img src="images/tools/react.png" alt="" />React</span>
+            <span class="marquee-item"><span class="logo-fallback">TS</span>TypeScript</span>
+            <span class="marquee-item"><img src="images/tools/js.webp" alt="" />JavaScript</span>
+            <span class="marquee-item"><img src="images/tools/supabase.jpg" alt="" />Supabase</span>
+            <span class="marquee-item"><img src="images/tools/php.png" alt="" />PHP</span>
+            <span class="marquee-item"><img src="images/tools/java.webp" alt="" />Java</span>
+            <span class="marquee-item"><img src="images/tools/mysql.webp" alt="" />MySQL</span>
+            <span class="marquee-item"><img src="images/tools/git.webp" alt="" />Git</span>
+            <span class="marquee-item"><img src="images/tools/github.webp" alt="" />GitHub</span>
+            <span class="marquee-item"><img src="images/tools/figma.webp" alt="" />Figma</span>
+            <span class="marquee-item"><img src="images/tools/vercel.jpg" alt="" />Vercel</span>
+            <span class="marquee-item"><img src="images/arduino.png" alt="" />Arduino</span>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Project 4 -->
-      <div class="project-row reverse" data-aos="fade-left">
-        <div class="project-img">
-          <img src="images/projects/schollar.png" alt="Schoolar project" />
-        </div>
-        <div class="project-content">
-          <h3>Schoolar: ANCOP Scholarship System</h3>
-          <p>
-            A full desktop-based system developed for managing scholar records
-            within a private organization. The system handles data
-            organization, monitoring, and management of scholars, ensuring
-            structured and efficient workflows.
-          </p>
-          <div class="tags">
-            <span>Scholar</span>
-            <span>Java</span>
-            <span>MySQL</span>
-            <span>Desktop System</span>
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Tools &amp; Frameworks</p>
+            <h2>Technologies I use to design, build, and ship.</h2>
+            <p>Project evidence matters more than self-rated percentages, so the stack is grouped by how I use it.</p>
           </div>
-          <div class="btns">
-            <a href="https://github.com/buildwithjaym/" title="View my Desktop App" class="download-btn">View
-              Project</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 5 -->
-      <div class="project-row" data-aos="fade-right">
-        <div class="project-img">
-          <img src="images/projects/pneuscan.png" alt="PneuScan AI project" />
-        </div>
-        <div class="project-content">
-          <h3>PneuScan AI: Startup Landing Page</h3>
-          <p>
-            A modern landing page designed for a startup focused on AI-powered
-            healthcare solutions. The page highlights key features,
-            communicates value clearly, and is designed to engage users
-            through clean layout and strong visual hierarchy.
-          </p>
-          <div class="tags">
-            <span>Landing Page</span>
-            <span>UI/UX</span>
-            <span>Web Dev</span>
-            <span>Deploy</span>
+          <div class="tool-category-block reveal">
+            <div class="tool-category-heading">
+              <span>01</span>
+              <h3>Frontend &amp; Web</h3>
+            </div>
+            <div class="tool-grid">
+              <div class="tool-item"><img src="images/tools/html5.png" alt="HTML logo" /><span>HTML</span></div>
+              <div class="tool-item"><img src="images/tools/css3.webp" alt="CSS logo" /><span>CSS</span></div>
+              <div class="tool-item"><img src="images/tools/js.webp" alt="JavaScript logo" /><span>JavaScript</span>
+              </div>
+              <div class="tool-item"><img src="images/tools/react.png" alt="React logo" /><span>React</span></div>
+              <div class="tool-item"><img src="images/tools/nextjs.jpg" alt="Next.js logo" /><span>Next.js</span></div>
+              <div class="tool-item"><img src="images/7234c47a96ac47a3cf540be61f8adbf1-removebg-preview.png"
+                  alt="Node.js logo" /><span>Node.js</span></div>
+            </div>
           </div>
-          <div class="btns">
-            <a href="https://pneuscanai.vercel.app/" title="View My Technopreneurship Startup" class="download-btn">View
-              Project</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 6 -->
-      <div class="project-row reverse" data-aos="fade-left">
-        <div class="project-img">
-          <img src="images/projects/qorban.png" alt="Qorban Portal" />
-        </div>
-        <div class="project-content">
-          <h3>Qorban Portal: An Online Grade Management System</h3>
-          <p>
-            Qorban Portal is an online grade management system specialize for Qorban Institute of Technology Training
-            and Assessment Center,INC.
-          </p>
-          <div class="tags">
-            <span>NEXTjs</span>
-            <span>Portal</span>
-            <span>Typescript</span>
-            <span>Supabase</span>
+          <div class="tool-category-block reveal">
+            <div class="tool-category-heading">
+              <span>02</span>
+              <h3>Backend &amp; Data</h3>
+            </div>
+            <div class="tool-grid">
+              <div class="tool-item"><img src="images/tools/php.png" alt="PHP logo" /><span>PHP</span></div>
+              <div class="tool-item"><img src="images/tools/java.webp" alt="Java logo" /><span>Java</span></div>
+              <div class="tool-item"><img src="images/tools/python.jpg" alt="Python logo" /><span>Python</span></div>
+              <div class="tool-item"><img src="images/tools/mysql.webp" alt="MySQL logo" /><span>MySQL</span></div>
+              <div class="tool-item"><img src="images/tools/supabase.jpg" alt="Supabase logo" /><span>Supabase</span>
+              </div>
+              <div class="tool-item"><img src="images/xampp.webp" alt="XAMPP logo" /><span>XAMPP</span></div>
+            </div>
           </div>
-          <div class="btns">
-            <a href="https://www.qorbanportal.online" title="View my Student Portal System" class="download-btn">View
-              Project</a>
-          </div>
-        </div>
-      </div>
-      <!-- Project 7 -->
-      <div class="project-row" data-aos="fade-right">
-        <div class="project-img">
-          <img src="images/projects/quixora.png" alt="Quizora" />
-        </div>
-        <div class="project-content">
-          <h3>Quizora: Offline Quiz System with Instant Score Results</h3>
-          <p>
-            A smart offline quiz system with leaderboard tracking, phone
-            connectivity, instant score retrieval, and restricted access logic
-            for secure and efficient assessments.
-          </p>
-          <div class="tags">
-            <span>Web App</span>
-            <span>Offline System</span>
-            <span>PHP</span>
-            <span>Leaderboard</span>
-          </div>
-          <div class="btns">
-            <a href="https://github.com/buildwithjaym/basc-quiz-system" title="View my quizora"
-              class="download-btn">View Project</a>
-          </div>
-        </div>
-      </div>
 
-      <!-- Project 8 -->
-      <div class="project-row reverse" data-aos="fade-left">
-        <div class="project-img">
-          <img src="images/cet-project/header.webp" alt="CET REsult System" />
-        </div>
-        <div class="project-content">
-          <h3>College Entrance Test Result System</h3>
-          <p>
-            The College Entrance Test (CET) Result System is a web-based platform
-            that allows students to conveniently access and download their results online.
-            It reduces the need for travel, helping save time, cost, and effort. For
-            administrators, it streamlines result management, making it easier to track
-            performance and handle records efficiently.
-          </p>
-          <div class="tags">
-            <span>React</span>
-            <span>NEXTjs</span>
-            <span>Supabase</span>
-            <span>Online result</span>
-          </div>
-          <div class="btns">
-            <a href="https://www.basc-cet.site" title="View my CET Result System" class="download-btn">View Project</a>
+          <div class="tool-category-block reveal">
+            <div class="tool-category-heading">
+              <span>03</span>
+              <h3>Design, Development Workflow &amp; Deployment</h3>
+            </div>
+            <div class="tool-grid tool-grid-wide">
+              <div class="tool-item"><img src="images/tools/figma.webp" alt="Figma logo" /><span>Figma</span></div>
+              <div class="tool-item"><img src="images/tools/canva.webp" alt="Canva logo" /><span>Canva</span></div>
+              <div class="tool-item"><img src="images/tools/git.webp" alt="Git logo" /><span>Git</span></div>
+              <div class="tool-item"><img src="images/tools/github.webp" alt="GitHub logo" /><span>GitHub</span></div>
+              <div class="tool-item"><img src="images/tools/vscode.jpg" alt="VS Code logo" /><span>VS Code</span></div>
+              <div class="tool-item"><img src="images/tools/apache.jpg" alt="Apache NetBeans logo" /><span>Apache
+                  NetBeans</span></div>
+              <div class="tool-item"><img src="images/tools/vercel.jpg" alt="Vercel logo" /><span>Vercel</span></div>
+              <div class="tool-item"><img src="images/tools/netlify.webp" alt="Netlify logo" /><span>Netlify</span>
+              </div>
+              <div class="tool-item"><img src="images/arduino.png" alt="Arduino logo" /><span>Arduino</span></div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Project 9 -->
-      <div class="project-row" data-aos="fade-right">
-        <div class="project-img">
-          <img src="images/projects/nexora.png" alt="Nexora-OJT Tracking System" />
-        </div>
-        <div class="project-content">
-          <h3>Nexora - Your Trusted OJT Tracking System</h3>
-          <p>
-            Nexora helps schools manage practicum workflows through a cleaner experience for attendance, progress
-            visibility, coordination, and monitoring — built to feel easier for students and more reliable for
-            institutions.
-          </p>
-          <div class="tags">
-            <span>NEXTjs</span>
-            <span>React</span>
-            <span>Supabase</span>
-            <span>Typescript</span>
-            <span>Geolocation</span>
-          </div>
-          <div class="btns">
-            <a href="https://www.nexora-ojt-tracker.online" title="View my OJT Monitoring System"
-              class="download-btn">View
-              Project</a>
-          </div>
-        </div>
-      </div>
+      <section class="section section-soft" id="projects">
+        <div class="container">
+          <div class="section-heading projects-heading reveal">
+            <div>
+              <p class="eyebrow">Selected Work</p>
+              <h2>Ten projects that show how I think and build.</h2>
+              <p>Real-time web, AI-assisted systems, education platforms, IoT, desktop software, and product interfaces.
+              </p>
+            </div>
 
-      <!-- Project 10 -->
-      <div class="project-row reverse" data-aos="fade-left">
-        <div class="project-img">
-          <img src="images/projects/amoreframe.png" alt="AmoreFrame Photobooth" />
-        </div>
-        <div class="project-content">
-          <h3>AmoreFrame - Virtual Photobooth for Couples</h3>
-          <p>
-
-            AmoreFrame is a virtual photobooth designed for couples to create beautiful memories together. With features
-            like guided countdowns, cinematic themes, and instant photostrips, it makes capturing special moments easy
-            and fun. </p>
-          </p>
-
-          <div class="tags">
-            <span>Realtime Sync</span>
-            <span>Google Auth</span>
-            <span>105 users</span>
-            <span>WebRTC</span>
-            <span>Dual Mode</span>
+            <a class="text-link" href="https://github.com/buildwithjaym" target="_blank" rel="noopener noreferrer">
+              View GitHub
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="btns">
-            <a href="https://www.amoreframephotobooth.site" title="Visit Amoreframe Now!" class="download-btn">
-              View Project
+
+          <article class="featured-project reveal">
+            <a class="featured-project-image project-image" href="https://www.amoreframephotobooth.site" target="_blank"
+              rel="noopener noreferrer" aria-label="Visit AmoreFrame">
+              <img src="images/projects/amoreframe.png" alt="AmoreFrame virtual photobooth interface" />
+            </a>
+
+            <div class="featured-project-content">
+              <div class="project-kicker">
+                <span>Project 01</span>
+                <span class="project-result">117+ users and counting</span>
+              </div>
+
+              <h3>AmoreFrame</h3>
+              <p class="project-type">Virtual Photobooth for Couples</p>
+              <p class="project-description">
+                AmoreFrame is a virtual photobooth built around shared photo experiences. It includes guided countdowns,
+                themed sessions, instant photostrips, authentication, real-time synchronization, and Dual Mode using
+                WebRTC.
+              </p>
+
+              <div class="tags">
+                <span>WebRTC</span>
+                <span>Realtime Sync</span>
+                <span>Google Auth</span>
+                <span>Dual Mode</span>
+              </div>
+
+              <a class="btn btn-primary project-cta" href="https://www.amoreframephotobooth.site" target="_blank"
+                rel="noopener noreferrer">
+                Visit AmoreFrame
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <a class="project-image" href="https://trashure-web-app.vercel.app" target="_blank"
+                rel="noopener noreferrer" aria-label="Open Trashure project">
+                <img src="images/trashure/hero.png" alt="Trashure AI circular recovery platform interface" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">02</div>
+                <h3>Trashure</h3>
+                <p class="project-type">AI-Powered Circular Recovery Platform</p>
+                <p>A waste recovery platform for identifying reusable items, finding recovery options, and connecting
+                  with
+                  donation or recycling channels.</p>
+                <div class="tags"><span>Next.js</span><span>Supabase</span><span>Gemini
+                    AI</span><span>Sustainability</span></div>
+                <a class="text-link" href="https://trashure-web-app.vercel.app" target="_blank"
+                  rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-image" href="https://www.nexora-ojt-tracker.online" target="_blank"
+                rel="noopener noreferrer" aria-label="Open Nexora project">
+                <img src="images/projects/nexora.png" alt="Nexora OJT tracking system interface" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">03</div>
+                <h3>Nexora</h3>
+                <p class="project-type">OJT Tracking System</p>
+                <p>A practicum workflow platform for attendance, progress visibility, coordination, and monitoring for
+                  students and institutions.</p>
+                <div class="tags">
+                  <span>Next.js</span><span>React</span><span>Supabase</span><span>TypeScript</span><span>Geolocation</span>
+                </div>
+                <a class="text-link" href="https://www.nexora-ojt-tracker.online" target="_blank"
+                  rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-image" href="https://www.basc-cet.site" target="_blank" rel="noopener noreferrer"
+                aria-label="Open College Entrance Test Result System">
+                <img src="images/cet-project/header.webp" alt="College Entrance Test Result System interface" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">04</div>
+                <h3>College Entrance Test Result System</h3>
+                <p class="project-type">Online Results Platform</p>
+                <p>A web platform where students access and download entrance test results while administrators manage
+                  records and publishing workflows.</p>
+                <div class="tags"><span>React</span><span>Next.js</span><span>Supabase</span><span>Online Results</span>
+                </div>
+                <a class="text-link" href="https://www.basc-cet.site" target="_blank" rel="noopener noreferrer">View
+                  Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-image" href="https://www.qorbanportal.online" target="_blank" rel="noopener noreferrer"
+                aria-label="Open Qorban Portal">
+                <img src="images/projects/qorban.png" alt="Qorban Portal grade management interface" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">05</div>
+                <h3>Qorban Portal</h3>
+                <p class="project-type">Online Grade Management System</p>
+                <p>An online grade management system built for Qorban Institute of Technology Training and Assessment
+                  Center, Inc.</p>
+                <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Supabase</span></div>
+                <a class="text-link" href="https://www.qorbanportal.online" target="_blank"
+                  rel="noopener noreferrer">View
+                  Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-image" href="https://github.com/buildwithjaym/Flood-Monitoring-System-for-CDRRMO"
+                target="_blank" rel="noopener noreferrer" aria-label="Open BabalaBaha project">
+                <img src="images/projects/babala.png" alt="BabalaBaha flood monitoring system" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">06</div>
+                <h3>BabalaBaha</h3>
+                <p class="project-type">IoT-Based Flood Monitoring System</p>
+                <p>An IoT system for monitoring water levels and supporting early warnings for faster disaster response.
+                </p>
+                <div class="tags"><span>IoT</span><span>Arduino</span><span>ESP32</span><span>C++</span></div>
+                <a class="text-link" href="https://github.com/buildwithjaym/Flood-Monitoring-System-for-CDRRMO"
+                  target="_blank" rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-image" href="https://github.com/buildwithjaym/" target="_blank"
+                rel="noopener noreferrer" aria-label="Open Classify project">
+                <img src="images/projects/classify.png" alt="Classify class notification and alert system" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">07</div>
+                <h3>Classify</h3>
+                <p class="project-type">Instant Class Notification &amp; Alert System</p>
+                <p>A school communication system for enrollment, schedules, attendance, grades, quizzes, and class
+                  cancellation alerts.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span></div>
+                <a class="text-link" href="https://github.com/buildwithjaym/" target="_blank"
+                  rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-image" href="https://github.com/buildwithjaym/basc-quiz-system" target="_blank"
+                rel="noopener noreferrer" aria-label="Open Quizora project">
+                <img src="images/projects/quixora.png" alt="Quizora offline quiz system" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">08</div>
+                <h3>Quizora</h3>
+                <p class="project-type">Offline Quiz System with Instant Results</p>
+                <p>An offline assessment system with instant scoring, leaderboard tracking, phone connectivity, and
+                  restricted access logic.</p>
+                <div class="tags"><span>PHP</span><span>Offline System</span><span>Leaderboard</span><span>Web
+                    App</span>
+                </div>
+                <a class="text-link" href="https://github.com/buildwithjaym/basc-quiz-system" target="_blank"
+                  rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-image" href="https://github.com/buildwithjaym/" target="_blank"
+                rel="noopener noreferrer" aria-label="Open Schoolar project">
+                <img src="images/projects/schollar.png" alt="Schoolar ANCOP scholarship system" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">09</div>
+                <h3>Schoolar</h3>
+                <p class="project-type">ANCOP Scholarship System</p>
+                <p>A desktop system for organizing, monitoring, and managing scholar records within a private
+                  organization.</p>
+                <div class="tags"><span>Java</span><span>MySQL</span><span>Desktop System</span><span>Scholarship</span>
+                </div>
+                <a class="text-link" href="https://github.com/buildwithjaym/" target="_blank"
+                  rel="noopener noreferrer">View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <a class="project-image" href="https://pneuscanai.vercel.app/" target="_blank" rel="noopener noreferrer"
+                aria-label="Open PneuScan AI project">
+                <img src="images/projects/pneuscan.png" alt="PneuScan AI healthcare startup landing page" />
+              </a>
+              <div class="project-body">
+                <div class="project-number">10</div>
+                <h3>PneuScan AI</h3>
+                <p class="project-type">AI Healthcare Startup Landing Page</p>
+                <p>A startup landing page presenting an AI-powered healthcare concept through a focused content
+                  hierarchy
+                  and responsive interface.</p>
+                <div class="tags"><span>Landing Page</span><span>UI/UX</span><span>Web
+                    Development</span><span>Vercel</span></div>
+                <a class="text-link" href="https://pneuscanai.vercel.app/" target="_blank"
+                  rel="noopener noreferrer">View
+                  Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">How I Work</p>
+            <h2>From problem to shipped product.</h2>
+          </div>
+
+          <div class="process-list">
+            <article class="process-step reveal">
+              <div class="process-number">01</div>
+              <h3>Understand</h3>
+              <p>Understand the problem, users, constraints, and expected result.</p>
+            </article>
+            <article class="process-step reveal">
+              <div class="process-number">02</div>
+              <h3>Design</h3>
+              <p>Plan the workflow, interface hierarchy, database structure, and technical approach.</p>
+            </article>
+            <article class="process-step reveal">
+              <div class="process-number">03</div>
+              <h3>Build</h3>
+              <p>Develop incrementally with reusable components and clear system logic.</p>
+            </article>
+            <article class="process-step reveal">
+              <div class="process-number">04</div>
+              <h3>Test &amp; Ship</h3>
+              <p>Test usability and functionality, fix issues, deploy, and improve from real usage.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="exploring-section" aria-labelledby="exploring-title">
+        <div class="container exploring-wrap reveal">
+          <div>
+            <p class="eyebrow">Currently Exploring</p>
+            <h2 id="exploring-title">Learning direction</h2>
+          </div>
+          <ul class="exploring-list">
+            <li>Real-time web systems</li>
+            <li>WebRTC architecture</li>
+            <li>AI-assisted applications</li>
+            <li>Better backend architecture</li>
+            <li>Product analytics</li>
+            <li>Accessible UI engineering</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience &amp; Education</p>
+            <h2>Work history, education, and applied learning.</h2>
+          </div>
+
+          <div class="resume-grid">
+            <div class="reveal">
+              <h3 class="resume-title">Experience</h3>
+              <div class="timeline">
+                <article class="timeline-item">
+                  <p class="timeline-date">2+ years</p>
+                  <h4>Freelance Developer</h4>
+                  <p>Built web systems and applications including Classify, BabalaBaha, AmoreFrame, Nexora, and the
+                    College Entrance Test Result System.</p>
+                </article>
+
+                <article class="timeline-item">
+                  <p class="timeline-date">3+ years</p>
+                  <h4>Freelance Graphic Designer</h4>
+                  <p>Designed pubmats, posters, logos, tarpaulin layouts, and other visual materials for school
+                    organizations and individual clients.</p>
+                </article>
+
+                <article class="timeline-item">
+                  <p class="timeline-date">Publication work</p>
+                  <h4>Junior Graphic Designer &amp; Photojournalist</h4>
+                  <p>Created publication layouts and visual content for school organizations and previously served as
+                    Editor-in-Chief of Bitxus Publication.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="reveal">
+              <h3 class="resume-title">Education</h3>
+              <div class="timeline">
+                <article class="timeline-item">
+                  <p class="timeline-date">2023 – Present</p>
+                  <h4>Bachelor of Science in Computer Science</h4>
+                  <p>Basilan State College</p>
+                  <p>Dean’s Lister with academic focus in software engineering, system development, UI/UX, and
+                    full-stack
+                    application development.</p>
+                </article>
+
+                <article class="timeline-item">
+                  <p class="timeline-date">Academic focus</p>
+                  <h4>Software Engineering, UI/UX &amp; System Development</h4>
+                  <p>Applying coursework through full-stack systems and user-centered digital products.</p>
+                </article>
+
+                <article class="timeline-item">
+                  <p class="timeline-date">Certification</p>
+                  <h4>Graphic Design &amp; Marketing</h4>
+                  <p>Simplilearn</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-cta reveal">
+            <p>Review my full work history, education details, and project summary.</p>
+            <a class="btn btn-primary" href="jaymmaruji-resume.pdf" download>
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+              Download Resume
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow eyebrow-light">Contact</p>
+            <h2>Have a role, project, or collaboration in mind?</h2>
+            <p>I’m open to internships, freelance work, collaborations, and development opportunities.</p>
 
-      <!-- Project 11 -->
-      <div class="project-row" data-aos="fade-right">
-        <div class="project-img">
-          <img src="images/trashure/hero.png" alt="Trashure Platform" />
-        </div>
-        <div class="project-content">
-          <h3>Trashure | AI-Powered Circular Recovery Platform</h3>
-          <p>
+            <div class="contact-details">
+              <a href="mailto:jaymmaruji@gmail.com">
+                <i class="bx bx-envelope" aria-hidden="true"></i>
+                <span><small>Email</small>jaymmaruji@gmail.com</span>
+              </a>
+              <a href="tel:09356295960">
+                <i class="bx bx-phone" aria-hidden="true"></i>
+                <span><small>Phone</small>0935 629 5960</span>
+              </a>
+              <p>
+                <i class="bx bx-map" aria-hidden="true"></i>
+                <span><small>Location</small>Isabela City, Basilan</span>
+              </p>
+            </div>
 
-            Trashure is an AI-powered waste recovery platform designed to transform how communities manage reusable and
-            recyclable materials. By helping users identify items, discover recovery options, and connect with donation
-            or recycling channels, Trashure promotes sustainable living while reducing landfill waste. </p>
-          </p>
-
-          <div class="tags">
-            <span>Next.js</span>
-            <span>Supabase</span>
-            <span>Gemini AI</span>
-            <span>Circular Economy</span>
-            <span>Sustainability</span>
-          </div>
-          <div class="btns">
-            <a href="https://trashure-web-app.vercel.app" title="Visit my AI powered system" class="download-btn">
-              View Project
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- Experience and Education -->
-  <section class="experienceEducation" id="creative">
-    <div class="section-title" data-aos="zoom-in">
-      <span class="subHeading">RESUME</span>
-      <h2 class="heading">My Resume</h2>
-      <p class="desc">
-        A passionate Computer Science student and freelance
-        designer/developer, focused on building practical systems and
-        impactful visual designs.
-      </p>
-    </div>
-
-    <div class="resume-wrapper">
-      <div class="resume-col" data-aos="fade-right">
-        <h3>Education</h3>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h4>Bachelor of Science in Computer Science</h4>
-            <span>Basilan State College • 2023 – Present</span>
-            <p>
-              Currently a third-year student and Dean’s Lister, developing a
-              strong foundation in software engineering, system design,
-              problem-solving and actively building real-world applications.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <h4>Academic Focus & Specialization</h4>
-            <span>Core Areas of Study</span>
-            <p>
-              Focused on Software Engineering, UI/UX Design, and system
-              development. Gaining hands-on experience in building full-stack
-              applications and designing user-centered digital solutions.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <h4>Certification in Graphic Design & Marketing</h4>
-            <span>Simplilearn</span>
-            <p>
-              Completed foundational training in graphic design and basic
-              marketing, enhancing skills in visual communication, branding,
-              and audience engagement.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experience -->
-      <div class="resume-col" data-aos="fade-left">
-        <h3>Experience</h3>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h4>Freelance Graphic Designer</h4>
-            <span>3+ Years Experience</span>
-            <p>
-              Designed pubmats, posters, logos, and tarpaulin layouts for
-              school organizations and individual clients. Completed 55+
-              projects, helping visualize ideas and improve engagement.
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <h4>Junior Graphic Designer & Photojournalist</h4>
-            <span>The Chronicler • SSC & CICTT</span>
-            <p>
-              Created publication layouts and visual content for school
-              organizations. Former Editor-In-Chief of Bitxus Publication
-              (CICTT).
-            </p>
-          </div>
-
-          <div class="timeline-item">
-            <h4>Freelance Developer</h4>
-            <span>2+ Year Experience</span>
-            <p>
-              Built systems and applications including Classify,
-              BabalaBaha,Campus Connect Hub & AmoreFrame Photobooth. Currently improving the functionality of the CET
-              Result System, for easy access, and better dessimination of the results.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section class="contact" id="contact">
-    <div class="contact-top" data-aos="zoom-in">
-      <div>
-        <span class="subHeading">CONTACT ME</span>
-        <h2>GET IN TOUCH NOW</h2>
-      </div>
-      <p class="desc">
-        Open to opportunities and collaborations. Let’s connect and create
-        something impactful.
-      </p>
-    </div>
-
-    <div class="contact-wrapper">
-      <!-- Left side -->
-      <div class="contact-left" data-aos="fade-right">
-        <div class="contact-box">
-          <i class="bx bx-phone"></i>
-          <div>
-            <h4>HAVE A QUESTION?</h4>
-            <p><a href="tel:09356295960">0935 629 5960</a></p>
-          </div>
-        </div>
-
-        <div class="contact-box">
-          <i class="bx bx-envelope"></i>
-          <div>
-            <h4>WRITE EMAIL</h4>
-            <p>
-              <a href="mailto:jaymmaruji@gmail.com">jaymmaruji@gmail.com</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="contact-box">
-          <i class="bx bx-map"></i>
-          <div>
-            <h4>MY LOCATION</h4>
-            <p>Isabela City, Basilan</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right side -->
-      <div class="contact-right" data-aos="fade-left">
-
-        <form id="contact-form">
-
-          <!-- Name -->
-          <div class="form-row">
-            <div class="form-group">
-              <input type="text" name="user_name" placeholder="Name..." required />
+            <div class="contact-social-list" aria-label="Social profiles">
+              <a href="https://github.com/buildwithjaym" target="_blank" rel="noopener noreferrer">GitHub <i
+                  class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              <a href="https://linkedin.com/in/jaymaruji" target="_blank" rel="noopener noreferrer">LinkedIn <i
+                  class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              <a href="https://facebook.com/jaymar.maruji" target="_blank" rel="noopener noreferrer">Facebook <i
+                  class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
             </div>
           </div>
 
+          <div class="contact-card reveal">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="user_name">Name</label>
+                <input id="user_name" type="text" name="user_name" placeholder="Your name" autocomplete="name"
+                  required />
+              </div>
 
-          <!-- Email -->
-          <div class="form-row">
-            <div class="form-group">
-              <input type="email" name="user_email" placeholder="Email..." required />
-            </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="user_email">Email</label>
+                  <input id="user_email" type="email" name="user_email" placeholder="you@example.com"
+                    autocomplete="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="user_phone">Phone <span class="optional">(optional)</span></label>
+                  <input id="user_phone" type="tel" name="user_phone" placeholder="Your phone number"
+                    autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service_select">Service</label>
+                  <select id="service_select" required>
+                    <option value="">Select a service</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Desktop Application">Desktop Application</option>
+                    <option value="Backend Service">Backend Service</option>
+                    <option value="Landing Page">Landing Page</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <input type="hidden" name="service_type" id="final_service_type" />
+                  <input type="text" id="other_service" name="other_service" placeholder="Please specify"
+                    class="other-service" />
+                </div>
+
+                <div class="form-group">
+                  <label for="project_timeline">Timeline</label>
+                  <select id="project_timeline" name="project_timeline" required>
+                    <option value="">Select timeline</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Within 1 Month">Within 1 Month</option>
+                    <option value="1-3 Months">1–3 Months</option>
+                    <option value="Flexible">Flexible</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="project_budget">Project budget</label>
+                <select id="project_budget" name="project_budget" required>
+                  <option value="">Select a budget</option>
+                  <option value="Below ₱5,000">Below ₱5,000</option>
+                  <option value="₱5,000 - ₱10,000">₱5,000 – ₱10,000</option>
+                  <option value="₱10,000 - ₱25,000">₱10,000 – ₱25,000</option>
+                  <option value="₱25,000+">₱25,000+</option>
+                  <option value="Need Consultation">Need Consultation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project details</label>
+                <textarea id="message" name="message"
+                  placeholder="Tell me what you are building, what you need, and your goal." required></textarea>
+              </div>
+
+              <button class="btn btn-primary submit-btn" type="submit">Send Inquiry</button>
+            </form>
+
+            <p id="form-status" class="form-status" aria-live="polite"></p>
           </div>
-
-
-          <!-- Phone + Service -->
-          <div class="form-row">
-
-            <div class="form-group">
-              <input type="text" name="user_phone" placeholder="Phone Number..." />
-            </div>
-
-
-            <div class="form-group">
-
-              <select id="service_select" required>
-
-                <option value="">
-                  Select Service
-                </option>
-
-                <option value="Web Design">
-                  Web Design
-                </option>
-
-                <option value="Graphic Design">
-                  Graphic Design
-                </option>
-
-                <option value="UI/UX Design">
-                  UI/UX Design
-                </option>
-
-                <option value="Desktop Application">
-                  Desktop Application
-                </option>
-
-                <option value="Backend Service">
-                  Backend Service
-                </option>
-
-                <option value="Landing Pages">
-                  Landing Pages
-                </option>
-
-                <option value="Other">
-                  Other
-                </option>
-
-              </select>
-
-
-              <!-- This sends the final selected service to EmailJS -->
-              <input type="hidden" name="service_type" id="final_service_type" />
-
-
-              <!-- Appears when Other is selected -->
-              <input type="text" id="other_service" name="other_service" placeholder="Please specify your service..."
-                style="display:none; margin-top:15px;" />
-
-            </div>
-
-          </div>
-
-
-          <!-- Budget -->
-          <div class="form-row">
-
-            <div class="form-group">
-
-              <select name="project_budget" required>
-
-                <option value="">
-                  Select Project Budget
-                </option>
-
-                <option value="Below ₱5,000">
-                  Below ₱5,000
-                </option>
-
-                <option value="₱5,000 - ₱10,000">
-                  ₱5,000 - ₱10,000
-                </option>
-
-                <option value="₱10,000 - ₱25,000">
-                  ₱10,000 - ₱25,000
-                </option>
-
-                <option value="₱25,000+">
-                  ₱25,000+
-                </option>
-
-                <option value="Need Consultation">
-                  Need Consultation
-                </option>
-
-              </select>
-
-            </div>
-
-
-            <!-- Timeline -->
-            <div class="form-group">
-
-              <select name="project_timeline" required>
-
-                <option value="">
-                  Project Timeline
-                </option>
-
-                <option value="Urgent">
-                  Urgent
-                </option>
-
-                <option value="Within 1 Month">
-                  Within 1 Month
-                </option>
-
-                <option value="1-3 Months">
-                  1-3 Months
-                </option>
-
-                <option value="Flexible">
-                  Flexible
-                </option>
-
-              </select>
-
-            </div>
-
-          </div>
-
-
-          <!-- Message -->
-          <div class="form-row">
-
-            <div class="form-group">
-
-              <textarea name="message" placeholder="Tell me about your project..." required></textarea>
-
-            </div>
-
-          </div>
-
-
-          <!-- Submit -->
-          <div class="btn">
-
-            <button class="download-btn" type="submit" style="border:none;">
-              SEND PROJECT INQUIRY
-            </button>
-
-          </div>
-
-
-        </form>
-
-
-        <p id="form-status" class="form-status"></p>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-wrapper">
-      <!-- Left -->
-      <div class="footer-left">
-        <h2 class="logo">Jaym <span>Maruji.</span></h2>
-        <p>
-          A passionate developer and designer focused on building clean,
-          functional, and impactful digital solutions.
-        </p>
-      </div>
-
-      <!-- Middle (Links) -->
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <!-- Right (Socials) -->
-      <div class="footer-socials">
-        <h4>Connect</h4>
-        <div class="social-icons">
-          <a href="https://facebook.com/jaymar.maruji"><i class="bx bxl-facebook"></i></a>
-          <a href="https://github.com/buildwithjaym"><i class="bx bxl-github"></i></a>
-          <a href="https://linkedin.com/in/jaymaruji"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://m.me/jaymar.maruji"><i class="bx bxl-messenger"></i></a>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div class="footer-brand-block">
+          <a href="#home" class="brand">Jaym <span>Maruji.</span></a>
+          <p>Full-Stack Developer &amp; Designer based in Basilan.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#why-me">Why Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <p class="copyright">© 2026 Jaym Maruji.</p>
       </div>
-    </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <!-- Bottom -->
-    <div class="footer-bottom">
-      <p>© 2026 Jaym Maruji. All rights reserved.</p>
-    </div>
-  </footer>
+    <script>
+      const siteHeader = document.getElementById("siteHeader");
+      const navMenu = document.getElementById("navMenu");
+      const menuToggle = document.querySelector(".menu-toggle");
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script defer src="/_vercel/insights/script.js"></script>
-
-  <script>
-    const navMenu = document.getElementById("navMenu");
-    const menuToggle = document.querySelector(".menu-toggle");
-
-    function toggleMenu() {
-      navMenu.classList.toggle("active");
-    }
-
-    document.querySelectorAll("#navMenu a").forEach((link) => {
-      link.addEventListener("click", () => {
+      const closeMenu = () => {
         navMenu.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+        menuToggle.querySelector("i").className = "bx bx-menu";
+      };
+
+      menuToggle.addEventListener("click", () => {
+        const isOpen = navMenu.classList.toggle("active");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+        menuToggle.querySelector("i").className = isOpen ? "bx bx-x" : "bx bx-menu";
       });
-    });
 
-    document.addEventListener("click", (e) => {
-      if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-        navMenu.classList.remove("active");
-      }
-    });
-  </script>
-  <script src="script.js"></script>
+      document.querySelectorAll("#navMenu a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    const form = document.getElementById("contact-form");
-    const statusText = document.getElementById("form-status");
-    const submitBtn = form.querySelector('button[type="submit"]');
+      document.addEventListener("click", (event) => {
+        if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+          closeMenu();
+        }
+      });
 
-    const serviceSelect = document.getElementById("service_select");
-    const otherService = document.getElementById("other_service");
-    const finalService = document.getElementById("final_service_type");
+      window.addEventListener(
+        "scroll",
+        () => {
+          siteHeader.classList.toggle("scrolled", window.scrollY > 12);
+        },
+        { passive: true }
+      );
 
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const revealItems = document.querySelectorAll(".reveal");
 
-    serviceSelect.addEventListener("change", function () {
-
-      if (this.value === "Other") {
-
-        otherService.style.display = "block";
-        otherService.required = true;
-
-        finalService.value = otherService.value;
-
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
       } else {
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.14, rootMargin: "0px 0px -40px 0px" }
+        );
 
-        otherService.style.display = "none";
-        otherService.required = false;
-        otherService.value = "";
-
-        finalService.value = this.value;
-
+        revealItems.forEach((item) => revealObserver.observe(item));
       }
 
-    });
-
-
-    otherService.addEventListener("input", function () {
-
-      finalService.value = this.value;
-
-    });
-
-
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
-
-
-      // Handle Other Service before sending
+      const form = document.getElementById("contact-form");
+      const statusText = document.getElementById("form-status");
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const serviceSelect = document.getElementById("service_select");
+      const otherService = document.getElementById("other_service");
       const finalService = document.getElementById("final_service_type");
 
-      if (serviceSelect.value === "Other") {
+      serviceSelect.addEventListener("change", function () {
+        const isOther = this.value === "Other";
 
-        if (!otherService.value.trim()) {
+        otherService.classList.toggle("show", isOther);
+        otherService.required = isOther;
 
-          statusText.className = "form-status error";
-          statusText.textContent = "Please specify your service.";
+        if (!isOther) {
+          otherService.value = "";
+          finalService.value = this.value;
+        } else {
+          finalService.value = otherService.value;
+        }
+      });
 
-          return;
+      otherService.addEventListener("input", function () {
+        finalService.value = this.value;
+      });
+
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        if (serviceSelect.value === "Other") {
+          if (!otherService.value.trim()) {
+            statusText.className = "form-status error";
+            statusText.textContent = "Please specify your service.";
+            otherService.focus();
+            return;
+          }
+
+          finalService.value = otherService.value.trim();
+        } else {
+          finalService.value = serviceSelect.value;
         }
 
-        finalService.value = otherService.value;
+        submitBtn.disabled = true;
+        statusText.className = "form-status loading";
+        statusText.textContent = "Sending your message...";
 
-      } else {
+        try {
+          emailjs.init({
+            publicKey: "gKiEvxMf7gI_FhdZn",
+          });
 
-        finalService.value = serviceSelect.value;
+          await emailjs.sendForm(
+            "service_fum65jf",
+            "template_rxj29tk",
+            form
+          );
 
-      }
+          emailjs.init({
+            publicKey: "m00a6hKbZ8S6KnXq-",
+          });
 
+          await emailjs.sendForm(
+            "service_z24x1iz",
+            "template_r213v6j",
+            form
+          );
 
-      submitBtn.disabled = true;
+          statusText.className = "form-status success";
+          statusText.textContent = "Message sent. Thank you for reaching out. I will get back to you soon.";
 
-      statusText.className = "form-status loading";
-      statusText.textContent = "Sending your message. Please wait...";
-
-
-      try {
-
-
-        // Send notification to portfolio owner using jaymarbusiness24@gmail.com
-        emailjs.init({
-          publicKey: "gKiEvxMf7gI_FhdZn"
-        });
-
-
-        await emailjs.sendForm(
-          "service_fum65jf",
-          "template_rxj29tk",
-          form
-        );
-
-
-        // Send auto reply to client using jaymmaruji@gmail.com
-        emailjs.init({
-          publicKey: "m00a6hKbZ8S6KnXq-"
-        });
-
-
-        await emailjs.sendForm(
-          "service_z24x1iz",
-          "template_r213v6j",
-          form
-        );
-
-
-        statusText.className = "form-status success";
-
-        statusText.textContent =
-          "Message sent successfully. Thank you for reaching out. I will get back to you soon.";
-
-
-        form.reset();
-
-        otherService.style.display = "none";
-        otherService.required = false;
-
-
-      } catch (error) {
-
-
-        console.error("EmailJS error:", error);
-
-
-        statusText.className = "form-status error";
-
-        statusText.textContent =
-          "Message failed to send. Please check your details and try again.";
-
-      } finally {
-
-
-        submitBtn.disabled = false;
-
-
-      }
-
-    });
-
-  </script>
-</body>
+          form.reset();
+          otherService.classList.remove("show");
+          otherService.required = false;
+          finalService.value = "";
+        } catch (error) {
+          console.error("EmailJS error:", error);
+          statusText.className = "form-status error";
+          statusText.textContent = "Message failed to send. Please check your details and try again.";
+        } finally {
+          submitBtn.disabled = false;
+        }
+      });
+    </script>
+  </body>
 
 </html>
