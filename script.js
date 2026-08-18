@@ -1,13 +1,50 @@
-AOS.init({ duration: 1000, once: true })
+(() => {
+    "use strict"
 
-// The typing effect
-new Typed("#typing", {
-    strings: ['Jaymar H. Maruji', 'UI/UX Designer.', 'Web Developer.', 'Creative Thinker.', 'Building Solution.'],
-    typeSpeed: 60,
-    backSpeed: 30,
-    backDelay: 1000,
-    loop: true
+    const loader = document.getElementById("siteLoader")
 
-});
+    let loaderFinished = false
 
+    function finishLoading() {
+        if (loaderFinished) {
+            return
+        }
 
+        loaderFinished = true
+
+        document.body.classList.remove("loading")
+        document.body.classList.add("page-ready")
+
+        if (!loader) {
+            return
+        }
+
+        loader.classList.add("loader-hidden")
+
+        window.setTimeout(() => {
+            if (loader.parentNode) {
+                loader.remove()
+            }
+        }, 500)
+    }
+
+    function startLoaderExit() {
+        window.setTimeout(() => {
+            finishLoading()
+        }, 2500)
+    }
+
+    if (document.readyState === "complete") {
+        startLoaderExit()
+    } else {
+        window.addEventListener(
+            "load",
+            startLoaderExit,
+            { once: true }
+        )
+    }
+
+    window.setTimeout(() => {
+        finishLoading()
+    }, 4000)
+})()
